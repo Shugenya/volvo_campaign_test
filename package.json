@@ -1,0 +1,20 @@
+{
+  "name": "volvo_campaign_test",
+  "version": "1.0.0",
+  "description": "A test suite for Volvo safety campaign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^7.19.7",
+    "@wdio/local-runner": "^7.19.7",
+    "@wdio/mocha-framework": "^7.19.7",
+    "@wdio/spec-reporter": "^7.19.7",
+    "chromedriver": "^101.0.0",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
+}
