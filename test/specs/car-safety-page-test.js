@@ -162,5 +162,9 @@ describe('Car safety page', () => {
 
    })
 
+   it('Is disclaimer displayed', async () =>  {
+    const disclaimerSection = await $('[data-autoid=Disclaimer-1]');
+    expect(disclaimerSection).toBeDisplayed();
+   })
 })
 
