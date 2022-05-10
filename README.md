@@ -1,4 +1,4 @@
-# volvo_campaign_test
+# Volvo campaign test
 Test automation project for Volvo safety campaign that covers the page https://www.volvocars.com/intl/v/car-safety/a-million-more.
 
 The test automation project consists of 4 suites, that are executed in parallel. Those suites are:
