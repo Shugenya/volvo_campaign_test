@@ -4,7 +4,10 @@
   "description": "A test suite for Volvo safety campaign",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-compose": "docker-compose -f docker-compose.yaml up --scale chrome=5",
+    "dev": "npm run wdio -- conf/wdio.dev.conf.js --suite",
+    "wdio": "wdio"
   },
   "keywords": [],
   "author": "",
