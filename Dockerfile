@@ -1,20 +1,18 @@
-FROM node:14
+FROM node:14.17.2
 
 # Install tools & libs to compile everything
-RUN apt-get update && apt-get install -y && apt-get clean && apt-get install -y libnss3
+RUN sudo apt-get update && apt-get install gconf-service libasound2 libatk1.0–0 libc6 libcairo2 libcups2 libdbus-1–3 libexpat1 libfontconfig1 libgbm-dev libgcc1 libgconf-2–4 libgdk-pixbuf2.0–0 libglib2.0–0 libgtk-3–0 libnspr4 libpango-1.0–0 libpangocairo-1.0–0 libstdc++6 libx11–6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 
-RUN apt-get install nss
-
-RUN apt-get install -y chromium-chromedriver
-
-RUN apt-get install libnss
-
-RUN apt-get install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
 
 COPY . /volvo_campaign_test
 WORKDIR /volvo_campaign_test
-RUN npm install
-RUN npm install chromedriver -g --unsafe-perm
-RUN npm install -g @wdio/cli
 
-ENTRYPOINT npm run wdio
+ENV WDIO_VERSION 4.0.7
+ENV WDIO_MOCHA_VERSION 0.2.13
+ENV WDIO_CSS_VERSION 1.1.10
+
+RUN mklink Link Target
+
+RUN npm install -g webdriverio@$WDIO_VERSION wdio-mocha-framework@$WDIO_MOCHA_VERSION webdrivercss@$WDIO_CSS_VERSION
+
+ENTRYPOINT ["./node_modules/.bin/wdio", "wdio.conf.js"]
