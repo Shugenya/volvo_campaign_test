@@ -14,4 +14,6 @@ The Explore car models, header and footor sections are all displayed in many oth
 The test data for Explore car models is stored in JSON files in /data folder.
 
 ## How to run
+npm install
+./node_modules/.bin/wdio run wdio.conf.js
 
