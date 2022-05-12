@@ -157,6 +157,21 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
+
+    autoCompileOpts: {
+        //
+        // To disable auto-loading entirely set this to false.
+        autoCompile: true, // <boolean> Disable this to turn off autoloading. Note: When disabling, you will need to handle calling any such libraries yourself.
+        //
+    },    
+    dockerOptions: {
+        image: 'selenium/standalone-chrome',
+        healthCheck: 'http://localhost:4444',
+        options: {
+            p: ['4444:4444'],
+            shmSize: '2g'
+        }
+    },
     //
     // =====
     // Hooks

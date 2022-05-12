@@ -10,7 +10,8 @@ COPY . /volvo_campaign_test
 WORKDIR /volvo_campaign_test
 
 #RUN npm install @wdio/cli
-#RUN npm install chrome -g
-RUN npm install -g webdriverio wdio-mocha-framework webdrivercss
+RUN npm install chrome -g
+RUN npm install -g webdriverio 
+RUN npm install wdio-mocha-framework
 
-ENTRYPOINT ["./node_modules/.bin/wdio", "wdio.conf.js"]
+ENTRYPOINT ./node_modules/.bin/wdio run wdio.conf.js
