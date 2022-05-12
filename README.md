@@ -13,7 +13,9 @@ The Explore car models, header and footor sections are all displayed in many oth
 ## Test data
 The test data for Explore car models is stored in JSON files in /data folder.
 
+## Test reporting
+The test reporting is visualized using Timeline reporter. The reports can be found in /reports folder. See example report.html file.
+
 ## How to run
-npm install
 ./node_modules/.bin/wdio run wdio.conf.js
 
