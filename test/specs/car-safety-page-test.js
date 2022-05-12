@@ -8,16 +8,24 @@ describe('Car safety page', () => {
     expect(browser).toHaveUrl(URL);
    })
 
-   it('Is displayed intro section', async () =>  {
+   /* TEST CASE 1 - Intro section */
+   it('Is Intro section displayed', async () =>  {
     const introSection = await $('[data-autoid=ModelIntro]');
     expect(introSection).toBeDisplayed();
 
     //Check intro title
     const introTitle = await introSection.$('h2');
+    expect(introTitle).toBeDisplayed();
     expect(introTitle).toHaveText('Ideas that change the world are often the most controversial.');
+
+    //Check intro text
+    const introText = await introSection.$('p');
+    expect(introText).toBeDisplayed();
+    expect(introText).toHaveTextContaining('After we introduced the 3-point safety belt');
    })
 
-   it('Is displayed video and playing', async () =>  {
+   /* TEST CASE 2 - Main video */
+   it('Is main video displayed and playing', async () =>  {
     const videoSection = await $('[data-autoid=Video-1]');
     expect(videoSection).toBeDisplayed();
 
@@ -28,6 +36,7 @@ describe('Car safety page', () => {
     //Check pause button works
     const pauseButton = await videoSection.$('[aria-label=pause]');
     expect(pauseButton).toBeDisplayed();
+    expect(pauseButton).toBeClickable();
     await pauseButton.click();
     const playButton = await videoSection.$('[aria-label=play]');
     expect(playButton).toBeDisplayed();
@@ -35,6 +44,7 @@ describe('Car safety page', () => {
 
     //Check button opens Youtube iframe
     const linkButton = await videoSection.$('button=watch the story');
+    expect(linkButton).toBeDisplayed();
     await linkButton.click();
     const youtubeFrame = await videoSection.$('iframe');
     expect(youtubeFrame).toBeDisplayed();
@@ -61,11 +71,16 @@ describe('Car safety page', () => {
 
    })
 
-   it('Is safety features title displayed', async () =>  {
+   /* TEST CASE 3 - Text statement */
+   it('Is text statement displayed', async () =>  {
     const featuresTitle = await $('[data-autoid=TextStatement-1]');
     expect(featuresTitle).toBeDisplayed();
+
+    const statement = await featuresTitle.$('span');
+    expect(statement).toHaveTextContaining('A million more.');
    })
 
+   /* TEST CASE 4 - Safety features */
    it('Are all safety features displayed', async () =>  {
     const iconSection = await $('[data-autoid=IconCallouts]');
     expect(iconSection).toBeDisplayed();
@@ -92,6 +107,7 @@ describe('Car safety page', () => {
     };
    })
 
+   /* TEST CASE 5 - Learn more link */
    it('Is learn more link displayed and working', async () =>  {
 
     const moreLink = await $("[data-autoid='iconCallouts:cta']");
@@ -105,6 +121,7 @@ describe('Car safety page', () => {
 
    })
 
+   /* TEST CASE 6 - Video testimonials */
    it('Are all video testimonials displayed', async () =>  {
     const testimonialsSection = await $('[data-autoid=VideoTestimonials-1]');
     expect(testimonialsSection).toBeDisplayed();
@@ -132,6 +149,7 @@ describe('Car safety page', () => {
     };
    })
 
+   /* TEST CASE 7 - Innovation section */
    it('Is Innovation section displayed and working', async () =>  {
 
     const innovationSection = await $('[data-autoid=ImageWithText-1]');
@@ -162,6 +180,7 @@ describe('Car safety page', () => {
 
    })
 
+   /* TEST CASE 8 - Disclaimer section */
    it('Is disclaimer displayed', async () =>  {
     const disclaimerSection = await $('[data-autoid=Disclaimer-1]');
     expect(disclaimerSection).toBeDisplayed();

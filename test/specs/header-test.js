@@ -8,22 +8,26 @@ describe('Header test', () => {
         expect(browser).toHaveUrl(URL);
     })
 
+    /* TEST CASE 1 - Logo home link */
     it('Logo home link is displayed and working', async () => {
         const topBar = await $("#sitenav\\:topbar");
         const homeLink = await topBar.$("[data-autoid='nav:siteNavLogoSmall']");
         expect(homeLink).toBeDisplayed();
         expect(homeLink).toBeClickable();
 
+        //Home link url
         const homeURL = 'https://www.volvocars.com/intl';
         const homeLinkRef = await homeLink.getAttribute('href');
         expect(homeLinkRef).toBe(homeURL);
         
+        //Click home link
         await homeLink.click();
         expect(browser).toHaveUrl(homeURL);
         await browser.url(URL);
            
     })
     
+    /* TEST CASE 2 - Our cars link */
     it('Our cars link is displayed and opens car menu', async () => {
         const carsLink = await $("[data-autoid='nav:topNavCarMenu']");
         expect(carsLink).toBeDisplayed();
@@ -48,10 +52,15 @@ describe('Header test', () => {
            
     })
 
+    /* TEST CASE 3 - Side navigation link */
     it('Menu link is displayed and opens side menu', async () => {
         const sideMenuLink = await $("#sitenav-sidenav-toggle");
         expect(sideMenuLink).toBeDisplayed();
         expect(sideMenuLink).toBeClickable();
+
+        //Menu link text
+        const menuLinkText = await sideMenuLink.$("em");
+        expect(menuLinkText).toHaveText("Menu");
 
         //Open side menu
         await sideMenuLink.click();

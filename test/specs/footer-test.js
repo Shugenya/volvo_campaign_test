@@ -8,6 +8,7 @@ describe('Footer test', () => {
         expect(browser).toHaveUrl(URL);
     })
 
+    /* TEST CASE 1 - Footer links */
     it('Footer container exists and has correct links', async () => {
         const footerContainer = await $("[data-autoid='footer:container']");
         expect(footerContainer).toBeDisplayed();

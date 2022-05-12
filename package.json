@@ -2,11 +2,15 @@
   "name": "volvo_campaign_test",
   "version": "1.0.0",
   "description": "A test suite for Volvo safety campaign",
-  "main": "index.js",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "wdio wdio.conf.js",
     "docker-compose": "docker-compose -f docker-compose.yaml up --scale selenium=1",
-    "dev": "npm run wdio -- conf/wdio.dev.conf.js --suite"
+    "dev": "npm run wdio -- conf/wdio.dev.conf.js --suite",
+    "wdio": "wdio"
   },
   "keywords": [],
   "author": "",

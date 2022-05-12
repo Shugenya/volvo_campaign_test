@@ -10,6 +10,7 @@ describe('Explore car models test', () => {
         expect(browser).toHaveUrl(URL);
     })
 
+    /* TEST CASE 1 - Car carousel */
     it('Check car carousel', async () => {
         const carousel = await $('[data-autoid=ProductListCarousel-1]');
         expect(carousel).toBeDisplayed();
@@ -48,6 +49,10 @@ describe('Explore car models test', () => {
             const rechargeType = await itemSingle.$("[data-autoid='productListCarouselItem:rechargeType']");
             expect(rechargeType).toBeDisplayed();
             expect(rechargeType).toHaveText(carModelDef['type']);
+
+            //Picture existis
+            const picture = await itemSingle.$('picture');
+            expect(picture).toBeDisplayed();
 
             //Link exists and matches definition
             const linkRef = await itemSingle.getAttribute('href');
