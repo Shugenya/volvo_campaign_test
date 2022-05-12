@@ -1,0 +1,80 @@
+{
+  "start": "2022-05-12T17:17:19.961Z",
+  "end": "2022-05-12T17:17:41.797Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "101.0.4951.54",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\ursar\\AppData\\Local\\Temp\\scoped_dir14404_1567635393"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:58752"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "f1d923e48010e4a62b0ccf97348308f1"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 21836,
+  "suites": [
+    {
+      "title": "Explore car models test",
+      "duration": 21069,
+      "start": "2022-05-12T17:17:19.969Z",
+      "end": "2022-05-12T17:17:41.038Z",
+      "tests": [
+        {
+          "title": "Open page and accept cookies",
+          "start": "2022-05-12T17:17:19.969Z",
+          "end": "2022-05-12T17:17:22.443Z",
+          "duration": 2474,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Check car carousel",
+          "start": "2022-05-12T17:17:22.446Z",
+          "end": "2022-05-12T17:17:38.721Z",
+          "duration": 16275,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Check car models bottom links",
+          "start": "2022-05-12T17:17:38.722Z",
+          "end": "2022-05-12T17:17:41.037Z",
+          "duration": 2315,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\ursar\\TestingProjects\\volvo_campaign_test\\test\\specs\\explore-car-models-test.js"
+  ],
+  "state": {
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0
+  }
+}

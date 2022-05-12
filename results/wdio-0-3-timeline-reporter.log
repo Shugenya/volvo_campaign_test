@@ -1,0 +1,88 @@
+{
+  "start": "2022-05-12T17:17:19.776Z",
+  "end": "2022-05-12T17:17:27.706Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "101.0.4951.54",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\ursar\\AppData\\Local\\Temp\\scoped_dir14404_365895922"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:58751"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "64c29dab8d687bc841ebf68794ed06ab"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 7930,
+  "suites": [
+    {
+      "title": "Header test",
+      "duration": 7828,
+      "start": "2022-05-12T17:17:19.790Z",
+      "end": "2022-05-12T17:17:27.618Z",
+      "tests": [
+        {
+          "title": "Open page and accept cookies",
+          "start": "2022-05-12T17:17:19.790Z",
+          "end": "2022-05-12T17:17:21.767Z",
+          "duration": 1977,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Logo home link is displayed and working",
+          "start": "2022-05-12T17:17:21.772Z",
+          "end": "2022-05-12T17:17:25.306Z",
+          "duration": 3534,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Our cars link is displayed and opens car menu",
+          "start": "2022-05-12T17:17:25.306Z",
+          "end": "2022-05-12T17:17:26.697Z",
+          "duration": 1391,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Menu link is displayed and opens side menu",
+          "start": "2022-05-12T17:17:26.701Z",
+          "end": "2022-05-12T17:17:27.613Z",
+          "duration": 912,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\ursar\\TestingProjects\\volvo_campaign_test\\test\\specs\\header-test.js"
+  ],
+  "state": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0
+  }
+}

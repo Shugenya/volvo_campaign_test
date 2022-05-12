@@ -1,0 +1,72 @@
+{
+  "start": "2022-05-12T17:17:19.724Z",
+  "end": "2022-05-12T17:17:23.848Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "101.0.4951.54",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\ursar\\AppData\\Local\\Temp\\scoped_dir14404_1482773956"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:58750"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "f2bb8abb300eb30cf7496351649d8580"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 4124,
+  "suites": [
+    {
+      "title": "Footer test",
+      "duration": 3961,
+      "start": "2022-05-12T17:17:19.740Z",
+      "end": "2022-05-12T17:17:23.701Z",
+      "tests": [
+        {
+          "title": "Open page and accept cookies",
+          "start": "2022-05-12T17:17:19.741Z",
+          "end": "2022-05-12T17:17:22.784Z",
+          "duration": 3043,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Footer container exists and has correct links",
+          "start": "2022-05-12T17:17:22.789Z",
+          "end": "2022-05-12T17:17:23.697Z",
+          "duration": 908,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\ursar\\TestingProjects\\volvo_campaign_test\\test\\specs\\footer-test.js"
+  ],
+  "state": {
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0
+  }
+}

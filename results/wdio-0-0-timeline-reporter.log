@@ -1,0 +1,128 @@
+{
+  "start": "2022-05-12T17:17:20.001Z",
+  "end": "2022-05-12T17:17:34.865Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "101.0.4951.54",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\ursar\\AppData\\Local\\Temp\\scoped_dir14404_1369559179"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:58753"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "98c34d0b1090a6a6e7bbc2c8b30bc5c9"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 14864,
+  "suites": [
+    {
+      "title": "Car safety page",
+      "duration": 14631,
+      "start": "2022-05-12T17:17:20.015Z",
+      "end": "2022-05-12T17:17:34.646Z",
+      "tests": [
+        {
+          "title": "Open page and accept cookies",
+          "start": "2022-05-12T17:17:20.015Z",
+          "end": "2022-05-12T17:17:22.887Z",
+          "duration": 2872,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Is Intro section displayed",
+          "start": "2022-05-12T17:17:22.892Z",
+          "end": "2022-05-12T17:17:23.142Z",
+          "duration": 250,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Is main video displayed and playing",
+          "start": "2022-05-12T17:17:23.150Z",
+          "end": "2022-05-12T17:17:25.648Z",
+          "duration": 2498,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Is text statement displayed",
+          "start": "2022-05-12T17:17:25.648Z",
+          "end": "2022-05-12T17:17:27.293Z",
+          "duration": 1645,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Are all safety features displayed",
+          "start": "2022-05-12T17:17:27.297Z",
+          "end": "2022-05-12T17:17:27.798Z",
+          "duration": 501,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Is learn more link displayed and working",
+          "start": "2022-05-12T17:17:27.801Z",
+          "end": "2022-05-12T17:17:30.236Z",
+          "duration": 2435,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Are all video testimonials displayed",
+          "start": "2022-05-12T17:17:30.236Z",
+          "end": "2022-05-12T17:17:31.320Z",
+          "duration": 1084,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Is Innovation section displayed and working",
+          "start": "2022-05-12T17:17:31.326Z",
+          "end": "2022-05-12T17:17:34.254Z",
+          "duration": 2928,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Is disclaimer displayed",
+          "start": "2022-05-12T17:17:34.254Z",
+          "end": "2022-05-12T17:17:34.639Z",
+          "duration": 385,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\ursar\\TestingProjects\\volvo_campaign_test\\test\\specs\\car-safety-page-test.js"
+  ],
+  "state": {
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0
+  }
+}
