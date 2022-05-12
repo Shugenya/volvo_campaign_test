@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio wdio.conf.js",
-    "docker-compose": "docker-compose -f docker-compose.yaml up --scale chrome=5",
+    "docker-compose": "docker-compose -f docker-compose.yaml up --scale selenium=1",
     "dev": "npm run wdio -- conf/wdio.dev.conf.js --suite"
   },
   "keywords": [],

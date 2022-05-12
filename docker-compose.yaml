@@ -2,10 +2,10 @@ services:
  wdio:
   build: .
   volumes: 
-   - $PWD/wdio.conf.js:/webdriverio/wdio.conf.js
-   - $PWD/test:/webdriverio/test
-   - $PWD/node_modules:/webdriverio/node_modules
-   - $PWD/results:/webdriverio/results
+   - /webdriverio/wdio.conf.js
+   - /webdriverio/test
+   - /webdriverio/node_modules
+   - /webdriverio/results
   depends_on:
    - selenium
  selenium:
