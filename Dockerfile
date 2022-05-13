@@ -14,4 +14,4 @@ RUN npm install chrome -g
 RUN npm install -g webdriverio 
 RUN npm install wdio-mocha-framework
 
-ENTRYPOINT ./node_modules/.bin/wdio run wdio.conf.js
+ENTRYPOINT ["./node_modules/.bin/wdio", "run", "wdio.conf.js"]
